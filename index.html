@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">Trinity Car | Location de voiture à Oujda</title>
+<meta id="metaDesc" name="description" content="Trinity Car - Location de voiture à Oujda. Véhicules récents, réservation rapide sur WhatsApp, service 24/7." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#1d6fe0" />
+<!-- Remplacez cette URL par le vrai domaine de l'agence avant mise en ligne -->
+<link rel="canonical" href="https://www.trinitycar.ma/" />
+
+<meta property="og:type" content="website" />
+<meta id="ogTitle" property="og:title" content="Trinity Car | Location de voiture à Oujda" />
+<meta id="ogDesc" property="og:description" content="Véhicules récents, réservation rapide sur WhatsApp, service 24/7 à Oujda." />
+<meta property="og:url" content="https://www.trinitycar.ma/" />
+<meta property="og:image" content="https://www.trinitycar.ma/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json" id="ldJson">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRental",
+  "name": "Trinity Car",
+  "image": "https://www.trinitycar.ma/og-image.jpg",
+  "telephone": "+212672855346",
+  "priceRange": "300-900 MAD",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1er Étage, Appt 14, Youssef Ben Tachafin et Angle Boulevard Allal Ben Abdallah",
+    "addressLocality": "Oujda",
+    "addressCountry": "MA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": ["https://www.instagram.com/trinitycar1"]
+}
+</script>
+
+<style>
+  :root{
+    --blue:#1d6fe0; --blue-dark:#0f4fb0; --red:#ef2b2b; --ink:#101418; --cream:#f4f6f9; --line:rgba(16,20,24,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; font-family:'Inter',Arial,sans-serif; color:var(--ink); background:var(--cream); -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4,.font-display{font-family:'Poppins',Arial,sans-serif;}
+  html[dir="rtl"] body{font-family:'Tajawal','Inter',Arial,sans-serif;}
+  html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,html[dir="rtl"] h4{font-family:'Tajawal','Poppins',Arial,sans-serif;}
+  html[dir="rtl"] body{text-align:right;}
+  a{color:inherit; text-decoration:none;}
+  img,svg{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px;}
+  ::selection{background:var(--blue); color:#fff;}
+  .icon{width:1em; height:1em; display:inline-block; vertical-align:-0.15em; flex-shrink:0;}
+
+  /* ---------- Nav ---------- */
+  .nav{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; height:80px; gap:16px;}
+  .brand{display:flex; align-items:center; gap:8px;}
+  .brand-text{font-weight:800; font-size:1.25rem; line-height:1;}
+  .brand-text small{display:block; font-family:'Inter'; font-weight:500; font-size:.62rem; letter-spacing:.02em; color:rgba(16,20,24,.4); margin-top:2px;}
+  html[dir="rtl"] .brand-text small{font-family:'Tajawal';}
+  .red{color:var(--red);}
+  .nav-links{display:none; gap:28px; align-items:center;}
+  .nav-links a{font-size:.9rem; font-weight:500; color:rgba(16,20,24,.8); position:relative; padding-bottom:6px;}
+  .nav-links a::after{content:'';position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--blue); transition:width .3s ease;}
+  .nav-links a:hover::after, .nav-links a.active::after{width:100%;}
+  .nav-links a.active{color:var(--blue);}
+  .btn-wa{display:inline-flex; align-items:center; gap:8px; background:var(--blue); color:#fff; padding:11px 20px; border-radius:12px; font-weight:500; font-size:.88rem; border:none; cursor:pointer; font-family:inherit;}
+  .btn-wa:hover{background:var(--blue-dark);}
+  .nav-cta{display:none;}
+  .nav-right{display:flex; align-items:center; gap:10px;}
+  .lang-btn{display:flex; align-items:center; gap:6px; border:1px solid rgba(16,20,24,.14); background:#fff; border-radius:10px; padding:8px 12px; font-size:.8rem; font-weight:600; cursor:pointer; font-family:inherit; color:var(--ink); letter-spacing:.03em;}
+  .lang-btn:hover{border-color:var(--blue); color:var(--blue);}
+  .burger{display:flex; background:none; border:none; padding:8px; cursor:pointer;}
+  .mobile-menu{display:none; flex-direction:column; gap:14px; padding:16px 20px 22px; border-top:1px solid var(--line); background:#fff;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{font-size:.9rem; font-weight:500;}
+  @media(min-width:820px){
+    .nav-links{display:flex;}
+    .nav-cta{display:inline-flex;}
+    .burger{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{background:linear-gradient(180deg,#fff, var(--cream)); overflow:hidden;}
+  .hero-inner{display:grid; gap:40px; padding:56px 0 80px; align-items:center;}
+  @media(min-width:860px){ .hero-inner{grid-template-columns:1fr 1fr;} }
+  .eyebrow{display:flex; align-items:center; gap:10px; color:var(--blue); font-weight:500; font-size:.85rem; margin-bottom:18px;}
+  .eyebrow .dash{width:32px; height:1px; background:var(--blue);}
+  .hero h1{font-weight:800; font-size:2.4rem; line-height:1.15; margin:0 0 20px;}
+  @media(min-width:640px){ .hero h1{font-size:3rem;} }
+  .hero-word{display:inline-block; overflow:hidden; margin-right:12px;}
+  html[dir="rtl"] .hero-word{margin-right:0; margin-left:12px;}
+  .hero-word span{display:inline-block; transform:translateY(115%); animation:riseUp .7s cubic-bezier(.2,.8,.2,1) forwards;}
+  @keyframes riseUp{to{transform:translateY(0);}}
+  .hero p.lead{color:rgba(16,20,24,.6); max-width:420px; margin:0 0 28px; line-height:1.6;}
+  .hero-features{display:flex; flex-wrap:wrap; gap:26px; margin-top:36px; font-size:.9rem;}
+  .hero-features b{display:block; font-weight:600;}
+  .hero-features span{color:rgba(16,20,24,.4);}
+  .hero-art{background:#fff; border-radius:24px; padding:40px; display:flex; align-items:center; justify-content:center;}
+  .hero-art img{width:100%; border-radius:14px; object-fit:cover;}
+
+  /* ---------- Trust bar ---------- */
+  .trust{background:#fff; border:1px solid var(--line); border-radius:18px; margin-top:-32px; position:relative; z-index:10; display:grid; grid-template-columns:1fr; box-shadow:0 1px 2px rgba(16,20,24,.03);}
+  @media(min-width:640px){ .trust{grid-template-columns:1fr 1fr;} }
+  @media(min-width:960px){ .trust{grid-template-columns:repeat(4,1fr);} }
+  .trust-item{padding:24px; border-top:1px solid var(--line);}
+  .trust-item:first-child{border-top:none;}
+  @media(min-width:640px){
+    .trust-item{border-top:none; border-inline-start:1px solid var(--line);}
+    .trust-item:nth-child(odd){border-inline-start:none;}
+  }
+  @media(min-width:960px){
+    .trust-item{border-inline-start:1px solid var(--line);}
+    .trust-item:first-child{border-inline-start:none;}
+    .trust-item:nth-child(odd){border-inline-start:1px solid var(--line);}
+  }
+  .trust-item .ic{color:var(--blue); font-size:1.4rem; margin-bottom:10px; display:block;}
+  .trust-item b{display:block; font-weight:600; margin-bottom:4px;}
+  .trust-item span{color:rgba(16,20,24,.4); font-size:.87rem;}
+
+  /* ---------- Sections ---------- */
+  section.block{padding:72px 0;}
+  .section-head{display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:30px; gap:16px; flex-wrap:wrap;}
+  .section-head h2{font-weight:700; font-size:1.7rem; margin:0;}
+  .section-head p{color:rgba(16,20,24,.4); margin:6px 0 0;}
+  .link-more{color:var(--blue); font-weight:500; font-size:.9rem; white-space:nowrap;}
+
+  /* ---------- Car cards ---------- */
+  .grid-cars{display:grid; gap:18px; grid-template-columns:1fr;}
+  @media(min-width:600px){ .grid-cars{grid-template-columns:1fr 1fr;} }
+  @media(min-width:960px){ .grid-cars.cols-4{grid-template-columns:repeat(4,1fr);} .grid-cars.cols-3{grid-template-columns:repeat(3,1fr);} }
+  .car-card{background:#fff; border:1px solid var(--line); border-radius:18px; padding:20px; display:flex; flex-direction:column; height:100%; transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease;}
+  .car-card:hover{transform:translateY(-6px); box-shadow:0 24px 46px -18px rgba(16,20,24,.18);}
+  .car-index{color:rgba(29,111,224,.25); font-weight:800; font-size:1.5rem; margin-bottom:2px;}
+  .car-art{height:110px; display:flex; align-items:center; justify-content:center; margin-bottom:6px;}
+  .car-art img{width:100%; height:100%; object-fit:contain; border-radius:10px;}
+  .car-card h3{font-weight:600; font-size:1.1rem; margin:0;}
+  .car-specs{display:flex; flex-wrap:wrap; gap:8px 14px; font-size:.83rem; color:rgba(16,20,24,.6); margin:10px 0 14px;}
+  .car-specs span{display:inline-flex; align-items:center; gap:5px;}
+  .car-specs .icon{color:var(--blue);}
+  .car-foot{margin-top:auto; display:flex; align-items:center; justify-content:space-between; padding-top:12px; border-top:1px solid var(--line);}
+  .car-price{font-weight:700; font-size:1.2rem; color:var(--blue);}
+  .car-price small{font-weight:400; font-size:.82rem; color:rgba(16,20,24,.4);}
+  .car-choose{background:none; border:none; color:var(--blue); font-weight:500; font-size:.87rem; cursor:pointer; font-family:inherit;}
+
+  /* ---------- How it works ---------- */
+  .steps{display:grid; gap:16px;}
+  @media(min-width:820px){ .steps{grid-template-columns:repeat(3,1fr);} }
+  .step-card{display:flex; gap:14px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px;}
+  .step-num{width:38px; height:38px; flex-shrink:0; border-radius:50%; background:var(--blue); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-family:'Poppins';}
+  .step-card b{display:block; margin-bottom:4px;}
+  .step-card span{color:rgba(16,20,24,.4); font-size:.87rem; line-height:1.5;}
+
+  /* ---------- reveal on scroll ---------- */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- Filters (fleet page) ---------- */
+  .filters{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:28px;}
+  select.filter{border:1px solid rgba(16,20,24,.12); border-radius:12px; padding:11px 16px; font-size:.87rem; background:#fff; font-family:inherit;}
+
+  /* ---------- Agency page ---------- */
+  .agency-grid{display:grid; gap:16px; grid-template-columns:1fr;}
+  @media(min-width:640px){ .agency-grid{grid-template-columns:1fr 1fr;} }
+  @media(min-width:960px){ .agency-grid{grid-template-columns:repeat(4,1fr);} }
+  .info-card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px; height:100%;}
+  .info-card .ic{color:var(--blue); font-size:1.3rem; display:block; margin-bottom:8px;}
+  .info-card b{display:block; margin-bottom:4px;}
+  .info-card span{color:rgba(16,20,24,.4); font-size:.87rem;}
+  .cta-panel{background:var(--ink); color:rgba(255,255,255,.85); border-radius:22px; padding:34px; display:grid; gap:22px;}
+  @media(min-width:760px){ .cta-panel{grid-template-columns:1fr auto; align-items:center;} }
+  .cta-panel h3{color:#fff; margin:0 0 8px; font-size:1.2rem;}
+  .cta-panel p{margin:2px 0; color:rgba(255,255,255,.55);}
+  .btn-white{display:inline-flex; align-items:center; gap:8px; background:#fff; color:var(--ink); padding:13px 22px; border-radius:12px; font-weight:500; white-space:nowrap;}
+
+  /* ---------- Reservation ---------- */
+  .res-grid{display:grid; gap:28px; grid-template-columns:1fr;}
+  @media(min-width:960px){ .res-grid{grid-template-columns:2fr 1fr;} }
+  .card-panel{background:#fff; border:1px solid var(--line); border-radius:18px; padding:26px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block; font-size:.85rem; font-weight:500; margin-bottom:7px;}
+  .field input, .field select, .field textarea{width:100%; border:1px solid rgba(16,20,24,.12); border-radius:12px; padding:12px 14px; font-size:.9rem; font-family:inherit;}
+  .field-row{display:grid; gap:16px; grid-template-columns:1fr;}
+  @media(min-width:560px){ .field-row{grid-template-columns:1fr 1fr;} }
+  .err{color:var(--red); font-size:.78rem; margin-top:5px;}
+  .submit-btn{width:100%; display:flex; align-items:center; justify-content:center; gap:8px; background:var(--blue); color:#fff; border:none; padding:16px; border-radius:12px; font-weight:500; font-size:.95rem; cursor:pointer; font-family:inherit;}
+  .submit-btn:hover{background:var(--blue-dark);}
+  .fine{text-align:center; font-size:.75rem; color:rgba(16,20,24,.3); margin-top:10px;}
+  .summary-car{display:flex; align-items:center; gap:12px; margin-bottom:18px;}
+  .summary-car .thumb{width:80px; height:56px; background:var(--cream); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden;}
+  .summary-car .thumb img{width:100%; height:100%; object-fit:cover;}
+  dl.summary-list{margin:0 0 16px;}
+  .summary-row{display:flex; justify-content:space-between; font-size:.88rem; padding:5px 0; color:rgba(16,20,24,.6);}
+  .summary-total{display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:14px; margin-bottom:16px;}
+  .summary-total b{font-size:1.25rem; font-family:'Poppins'; color:var(--blue);}
+  .summary-list-checks{list-style:none; padding:0; margin:0; font-size:.87rem; color:rgba(16,20,24,.5); display:flex; flex-direction:column; gap:7px;}
+  .summary-list-checks li{display:flex; align-items:center; gap:8px;}
+  .summary-list-checks .icon{color:#1fae5c;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink); color:rgba(255,255,255,.7); margin-top:80px;}
+  .footer-inner{display:grid; gap:36px; padding:56px 0; grid-template-columns:1fr;}
+  @media(min-width:760px){ .footer-inner{grid-template-columns:repeat(4,1fr);} }
+  footer h4{color:#fff; font-size:.95rem; margin:0 0 12px;}
+  footer p{color:rgba(255,255,255,.45); font-size:.87rem; line-height:1.6; margin:0;}
+  footer ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:9px;}
+  footer ul a{color:rgba(255,255,255,.55); font-size:.87rem;}
+  footer ul a:hover{color:#fff;}
+  .footer-brand{display:flex; align-items:center; gap:8px; margin-bottom:12px; font-weight:800; font-size:1.1rem; color:#fff;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.1); text-align:center; padding:18px 0; font-size:.78rem; color:rgba(255,255,255,.35);}
+
+  /* ---------- Floating WA ---------- */
+  .fab{position:fixed; bottom:22px; inset-inline-end:22px; z-index:60; width:56px; height:56px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(37,211,102,.4);}
+  .fab::before{content:''; position:absolute; inset:0; border-radius:50%; background:#25D366; opacity:.5; animation:pulseRing 2.2s ease-out infinite;}
+  @keyframes pulseRing{0%{transform:scale(1); opacity:.5;} 100%{transform:scale(1.9); opacity:0;}}
+  .fab .icon{width:28px; height:28px; color:#fff; position:relative;}
+
+  .page{animation:pageFade .45s ease;}
+  @keyframes pageFade{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);}}
+
+  @media(prefers-reduced-motion: reduce){
+    .reveal,.hero-word span,.car-card,.page{animation:none !important; transition:none !important; opacity:1 !important; transform:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#/" class="brand" data-nav>
+      <span class="brand-text">TRINITY<span class="red">CAR</span><small data-i="tagline">Location voiture Oujda</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#/" data-route="#/" data-i="nav_home">Accueil</a>
+      <a href="#/flotte" data-route="#/flotte" data-i="nav_fleet">Notre flotte</a>
+      <a href="#/agence" data-route="#/agence" data-i="nav_agency">À propos</a>
+      <a href="#/reservation" data-route="#/reservation" data-i="nav_reservation">Réservation</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" type="button"></button>
+      <a class="btn-wa nav-cta" id="navWaBtn" target="_blank" rel="noreferrer">
+        <span class="icon" id="navWaIcon"></span><span data-i="nav_wa">Réserver sur WhatsApp</span>
+      </a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#101418" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/" data-route="#/" data-i="nav_home">Accueil</a>
+    <a href="#/flotte" data-route="#/flotte" data-i="nav_fleet">Notre flotte</a>
+    <a href="#/agence" data-route="#/agence" data-i="nav_agency">À propos</a>
+    <a href="#/reservation" data-route="#/reservation" data-i="nav_reservation">Réservation</a>
+    <a class="btn-wa" id="navWaBtnMobile" target="_blank" rel="noreferrer" style="justify-content:center;" data-i="nav_wa">Réserver sur WhatsApp</a>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-brand">TRINITY<span class="red">CAR</span></div>
+      <p data-i="footer_desc">Votre partenaire de confiance pour la location de voitures à Oujda.</p>
+    </div>
+    <div>
+      <h4 data-i="footer_links">Liens rapides</h4>
+      <ul>
+        <li><a href="#/" data-route="#/" data-i="nav_home">Accueil</a></li>
+        <li><a href="#/flotte" data-route="#/flotte" data-i="nav_fleet">Notre flotte</a></li>
+        <li><a href="#/agence" data-route="#/agence" data-i="nav_agency">À propos</a></li>
+        <li><a href="#/reservation" data-route="#/reservation" data-i="nav_reservation">Réservation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i="footer_services">Nos services</h4>
+      <ul id="footerServices"></ul>
+    </div>
+    <div>
+      <h4 data-i="footer_contact">Contactez-nous</h4>
+      <ul id="footerContact"></ul>
+    </div>
+  </div>
+  <div class="footer-bottom" id="footerBottom"></div>
+</footer>
+
+<a class="fab" id="fabWa" target="_blank" rel="noreferrer"></a>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- ICONS (inline SVG, professional line-icon set) ---------------- */
+  var ICONS = {
+    whatsapp: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>',
+    gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 13.5c.1-.5.1-1 0-1.5l1.6-1.2-1.5-2.6-1.9.6a7.6 7.6 0 0 0-1.3-.8L16 6h-3l-.3 2c-.5.2-.9.4-1.3.8l-1.9-.6-1.5 2.6L9.6 12c-.1.5-.1 1 0 1.5L8 14.7l1.5 2.6 1.9-.6c.4.3.8.6 1.3.8l.3 2h3l.3-2c.5-.2.9-.5 1.3-.8l1.9.6 1.5-2.6-1.6-1.2Z"/></svg>',
+    snow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M4.9 5l14.2 14M4.9 19 19.1 5"/><path d="m8 3.5 4 2 4-2M8 20.5l4-2 4 2M2.5 8l2 4-2 4M21.5 8l-2 4 2 4"/></svg>',
+    fuel: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15"/><path d="M4 11h8M2 21h12"/><path d="M14 8h1.6l2.9 2.9V16a1.5 1.5 0 0 0 3 0v-4.5L18 8"/></svg>',
+    calendar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.3 2.4 2.4 4.6-5"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v6c0 4.4 3 7.7 7.5 9 4.5-1.3 7.5-4.6 7.5-9V6L12 3Z"/><path d="m9 12 2 2 4-4.5"/></svg>',
+    plane: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 21h3l-1-6 7-4.5c.9-.6.9-1.9 0-2.4-.5-.3-1.1-.3-1.6 0L11 12 5 9.5 3 11l4.5 3-1 6Z"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>',
+    star: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.6l-5.9 3 1.3-6.6-4.9-4.6 6.6-.8Z"/></svg>',
+    pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11.5a7 7 0 0 0-14 0C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+    phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2L21 15v3a2 2 0 0 1-2 2c-8 0-15-7-15-15a2 2 0 0 1 2-2Z"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
+    instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>',
+    money: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg>',
+    card: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19"/></svg>',
+    speed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 13 15.5 9M8 13a4 4 0 0 1 8 0"/></svg>',
+    gift: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="11" rx="1.5"/><path d="M3 13h18M12 9v11"/><path d="M12 9C9 9 8 7.5 8 6.2A2.2 2.2 0 0 1 12 5c0 1.3-1 4-1 4Z"/><path d="M12 9c3 0 4-1.5 4-2.8A2.2 2.2 0 0 0 12 5c0 1.3 1 4 1 4Z"/></svg>'
+  };
+  function icon(name){ return '<span class="icon">' + ICONS[name] + '</span>'; }
+
+  /* ---------------- DATA ---------------- */
+  var AGENCY = {
+    phone: "06 72 85 53 46",
+    whatsapp: "212672855346",
+    address: "1er Étage, Appt 14, Youssef Ben Tachafin et, Angle Boulevard Allal Ben Abdallah, Oujda",
+    rating: "4,7/5",
+    reviewsCount: "65+",
+    instagram: "https://www.instagram.com/trinitycar1"
+  };
+
+  var CARS = [
+    { id:1, name:"Hyundai Accent", annee:2023, transmission:"Automatique", carburant:"Diesel", price:330 },
+    { id:2, name:"Hyundai Accent", annee:2023, transmission:"Automatique", carburant:"Diesel", price:330 },
+    { id:3, name:"Hyundai Accent", annee:2025, transmission:"Automatique", carburant:"Essence", price:350 },
+    { id:4, name:"Opel Mokka", annee:2025, transmission:"Automatique", carburant:"Essence", price:400 },
+    { id:5, name:"Opel Corsa", annee:2025, transmission:"Manuelle", price:300 },
+    { id:6, name:"Golf 8", annee:2025, transmission:"Automatique", price:900 },
+    { id:7, name:"Hyundai Accent", annee:2023, carburant:"Diesel", price:330 }
+  ];
+
+  function carPhotoHtml(car, altPrefix){
+    return '<img src="sora' + car.id + '.jpeg" alt="' + (altPrefix || car.name) + '" loading="lazy">';
+  }
+
+  /* ---------------- VALUE TRANSLATIONS (car attributes) ---------------- */
+  var VALUES = {
+    fr: { Automatique:"Automatique", Manuelle:"Manuelle", Diesel:"Diesel", Essence:"Essence" },
+    ar: { Automatique:"أوتوماتيك", Manuelle:"يدوي", Diesel:"ديزل", Essence:"بنزين" },
+    en: { Automatique:"Automatic", Manuelle:"Manual", Diesel:"Diesel", Essence:"Petrol" }
+  };
+  function tv(val){ return (VALUES[LANG] && VALUES[LANG][val]) || val; }
+
+  /* ---------------- UI TRANSLATIONS ---------------- */
+  var I18N = {
+    fr: {
+      dir:"ltr", htmlLang:"fr", title:"Trinity Car | Location de voiture à Oujda",
+      desc:"Trinity Car - Location de voiture à Oujda. Véhicules récents, réservation rapide sur WhatsApp, service 24/7.",
+      tagline:"Location voiture Oujda",
+      nav_home:"Accueil", nav_fleet:"Notre flotte", nav_agency:"À propos", nav_reservation:"Réservation", nav_wa:"Réserver sur WhatsApp",
+      hero_eyebrow:"LOCATION VOITURE À OUJDA", hero_words:["Votre","trajet,","en","toute","sérénité."],
+      hero_lead:"Des véhicules récents, entretenus et prêts pour la route. Au meilleur prix.", hero_wa_sub:"Réponse rapide 24/7",
+      feat1_t:"Meilleur prix", feat1_d:"Garanti", feat2_t:"Réponse rapide", feat2_d:"24/7", feat3_t:"Service fiable", feat3_d:"Clients satisfaits",
+      trust1_t:"Assurance incluse", trust1_d:"Tous nos véhicules sont assurés pour votre sécurité.",
+      trust2_t:"Livraison aéroport / hôtel", trust2_d:"Gratuite à partir de 5 jours de location.",
+      trust3_t:"Ouvert 7j/7", trust3_d:"De 10h à 18h, tous les jours de la semaine.",
+      trust4_t:"Clients satisfaits", trust4_d:function(){ return AGENCY.reviewsCount + " avis Google — " + AGENCY.rating; },
+      fleet_heading:"Notre flotte", fleet_sub:"Choisissez la voiture qui vous convient.", fleet_more:"Voir toute la flotte",
+      how_heading:"COMMENT ÇA MARCHE ?",
+      step1_t:"Choisissez votre voiture", step1_d:"Parcourez notre flotte et sélectionnez le véhicule qui vous convient.",
+      step2_t:"Sélectionnez vos dates", step2_d:"Indiquez vos dates de début et de fin selon vos besoins.",
+      step3_t:"Réservez sur WhatsApp", step3_d:"Confirmez rapidement votre réservation via WhatsApp.",
+      promo_badge:"OFFRE SPÉCIALE", promo_title:"Louez 7 jours, le 1er jour est offert !",
+      promo_desc:"Valable sur toute la flotte, hors haute saison. Contactez-nous sur WhatsApp pour en profiter.",
+      fleet_page_eyebrow:"NOTRE FLOTTE", fleet_page_h1:"Tous nos véhicules",
+      fleet_page_sub:"Une flotte récente et entretenue, adaptée à tous vos trajets à Oujda et ses environs.",
+      fleet_categories:"Catégories : Économique · 4x4 · Luxe",
+      filter_all_trans:"Toutes transmissions", filter_auto:"Automatique", filter_manual:"Manuelle",
+      sort_default:"Trier par défaut", sort_asc:"Prix croissant", sort_desc:"Prix décroissant",
+      ac_label:"Climatisation", choose_btn:"Choisir", per_day:"/ jour", currency:"DH",
+      agency_eyebrow:"À PROPOS DE NOUS", agency_h1:"L'agence Trinity Car",
+      agency_p1:"Basée à Oujda, Trinity Car met à votre disposition une flotte de véhicules récents et bien entretenus — économiques, 4x4 ou de luxe — pour vos déplacements en ville ou vos trajets vers les villes voisines.",
+      agency_p2:"Réservation simple sur WhatsApp, assurance incluse, livraison à l'aéroport ou à l'hôtel, et une équipe disponible 7j/7 de 10h à 18h. Les clients étrangers sont les bienvenus.",
+      info1_t:"Villes couvertes", info1_d:"Oujda et alentours",
+      info2_t:"Conditions de location", info2_d:"Permis valide, 25 ans min., pièce d'identité",
+      info3_t:"Horaires", info3_d:"Ouvert 7j/7, de 10h à 18h", info4_t:"Contact rapide",
+      info5_t:"Caution", info5_d:"10 000 DH (restituée à la fin de la location)",
+      info6_t:"Paiement", info6_d:"Carte bancaire (TPE) ou espèces",
+      info7_t:"Kilométrage", info7_d:"250 km inclus par jour",
+      info8_t:"Livraison aéroport / hôtel", info8_d:"Gratuite à partir de 5 jours, sinon en supplément (nous consulter)",
+      find_us_t:"Nous trouver", find_us_phone_label:"Tél / WhatsApp :", contact_wa_btn:"Contacter sur WhatsApp",
+      instagram_btn:"Voir nos photos sur Instagram",
+      res_eyebrow:"RÉSERVATION", res_h1:"Réservez votre voiture",
+      res_sub:"Remplissez le formulaire, votre demande est envoyée directement sur WhatsApp.",
+      field_vehicle:"Véhicule", field_start:"Date de début", field_end:"Date de fin",
+      field_name:"Nom complet", field_name_ph:"Votre nom", field_phone:"Téléphone", field_phone_ph:"06 00 00 00 00",
+      field_notes:"Remarques (optionnel)", field_notes_ph:"Livraison à l'aéroport, siège bébé, etc.",
+      submit_btn:"Envoyer la demande sur WhatsApp",
+      fine_print:"Aucune pré-autorisation de paiement. Confirmation directement avec l'agence.",
+      err_start:"Choisissez une date de début.", err_end:"Choisissez une date de fin.",
+      err_end_order:"La date de fin doit être après la date de début.",
+      err_name:"Veuillez indiquer votre nom.", err_phone:"Veuillez indiquer votre numéro de téléphone.",
+      summary_title:"Votre réservation", summary_period:"Période", summary_price_day:"Prix par jour", summary_total:"Total",
+      days_word:function(n){ return n>1 ? "jours" : "jour"; },
+      check1:"Assurance incluse", check2:"250 km/jour inclus", check3:"Ouvert 7j/7, 10h-18h",
+      footer_desc:"Votre partenaire de confiance pour la location de voitures à Oujda.",
+      footer_links:"Liens rapides", footer_services:"Nos services", footer_contact:"Contactez-nous",
+      svc1:"Location courte durée", svc2:"Location longue durée", svc3:"Livraison aéroport / hôtel", svc4:"7j/7 — de 10h à 18h",
+      wa_available:"WhatsApp disponible", copyright:"© 2026 Trinity Car — Location voiture Oujda. Tous droits réservés.",
+      wa_default:"Bonjour Trinity Car, je souhaite réserver une voiture.",
+      wa_agency_info:"Bonjour Trinity Car, j'aimerais avoir plus d'informations sur l'agence.",
+      wa_booking:function(car,start,end,days,total,name,phone,notes){
+        return "Bonjour Trinity Car, je souhaite réserver :\n" +
+          "Véhicule : " + car.name + (car.annee ? " (" + car.annee + ")" : "") + "\n" +
+          "Du : " + start + "  Au : " + end + "  (" + days + " " + I18N[LANG].days_word(days) + ")\n" +
+          "Prix estimé : " + total + " DH\n" + "Nom : " + name + "\n" + "Téléphone : " + phone +
+          (notes ? "\nRemarques : " + notes : "");
+      }
+    },
+    en: {
+      dir:"ltr", htmlLang:"en", title:"Trinity Car | Car Rental in Oujda",
+      desc:"Trinity Car - Car rental in Oujda. Recent vehicles, quick booking on WhatsApp, 24/7 service.",
+      tagline:"Car rental Oujda",
+      nav_home:"Home", nav_fleet:"Our fleet", nav_agency:"About", nav_reservation:"Booking", nav_wa:"Book on WhatsApp",
+      hero_eyebrow:"CAR RENTAL IN OUJDA", hero_words:["Your","journey,", "with", "total", "peace", "of", "mind."],
+      hero_lead:"Recent, well-maintained vehicles ready for the road. At the best price.", hero_wa_sub:"Fast reply 24/7",
+      feat1_t:"Best price", feat1_d:"Guaranteed", feat2_t:"Fast reply", feat2_d:"24/7", feat3_t:"Reliable service", feat3_d:"Happy customers",
+      trust1_t:"Insurance included", trust1_d:"All our vehicles are insured for your safety.",
+      trust2_t:"Airport / hotel delivery", trust2_d:"Free of charge from 5 days of rental.",
+      trust3_t:"Open 7 days a week", trust3_d:"From 10am to 6pm, every day of the week.",
+      trust4_t:"Happy customers", trust4_d:function(){ return AGENCY.reviewsCount + " Google reviews — " + AGENCY.rating; },
+      fleet_heading:"Our fleet", fleet_sub:"Choose the car that suits you.", fleet_more:"See the full fleet",
+      how_heading:"HOW IT WORKS",
+      step1_t:"Choose your car", step1_d:"Browse our fleet and pick the vehicle that suits you.",
+      step2_t:"Select your dates", step2_d:"Enter your start and end dates based on your needs.",
+      step3_t:"Book on WhatsApp", step3_d:"Quickly confirm your booking via WhatsApp.",
+      promo_badge:"SPECIAL OFFER", promo_title:"Rent for 7 days, get the 1st day free!",
+      promo_desc:"Valid on the whole fleet, excluding peak season. Contact us on WhatsApp to take advantage.",
+      fleet_page_eyebrow:"OUR FLEET", fleet_page_h1:"All our vehicles",
+      fleet_page_sub:"A recent, well-maintained fleet, suited to all your trips in and around Oujda.",
+      fleet_categories:"Categories: Economy · 4x4 · Luxury",
+      filter_all_trans:"All transmissions", filter_auto:"Automatic", filter_manual:"Manual",
+      sort_default:"Default order", sort_asc:"Price: low to high", sort_desc:"Price: high to low",
+      ac_label:"Air conditioning", choose_btn:"Choose", per_day:"/ day", currency:"DH",
+      agency_eyebrow:"ABOUT US", agency_h1:"The Trinity Car agency",
+      agency_p1:"Based in Oujda, Trinity Car offers a fleet of recent, well-maintained vehicles — economy, 4x4 or luxury — for your trips around the city or to nearby towns.",
+      agency_p2:"Simple booking on WhatsApp, insurance included, airport or hotel delivery, and a team available 7 days a week from 10am to 6pm. Foreign customers are welcome.",
+      info1_t:"Areas covered", info1_d:"Oujda and surrounding areas",
+      info2_t:"Rental conditions", info2_d:"Valid driving licence, 25 years min., ID required",
+      info3_t:"Opening hours", info3_d:"Open 7 days a week, 10am to 6pm", info4_t:"Quick contact",
+      info5_t:"Security deposit", info5_d:"10,000 DH (refunded at the end of the rental)",
+      info6_t:"Payment", info6_d:"Card (TPE terminal) or cash",
+      info7_t:"Mileage", info7_d:"250 km included per day",
+      info8_t:"Airport / hotel delivery", info8_d:"Free from 5 days, otherwise a small fee applies (ask us)",
+      find_us_t:"Find us", find_us_phone_label:"Phone / WhatsApp:", contact_wa_btn:"Contact on WhatsApp",
+      instagram_btn:"See our photos on Instagram",
+      res_eyebrow:"BOOKING", res_h1:"Book your car",
+      res_sub:"Fill in the form — your request is sent directly on WhatsApp.",
+      field_vehicle:"Vehicle", field_start:"Start date", field_end:"End date",
+      field_name:"Full name", field_name_ph:"Your name", field_phone:"Phone number", field_phone_ph:"06 00 00 00 00",
+      field_notes:"Notes (optional)", field_notes_ph:"Airport delivery, child seat, etc.",
+      submit_btn:"Send request on WhatsApp",
+      fine_print:"No payment pre-authorisation. Confirmation directly with the agency.",
+      err_start:"Please choose a start date.", err_end:"Please choose an end date.",
+      err_end_order:"The end date must be after the start date.",
+      err_name:"Please enter your name.", err_phone:"Please enter your phone number.",
+      summary_title:"Your booking", summary_period:"Period", summary_price_day:"Price per day", summary_total:"Total",
+      days_word:function(n){ return n>1 ? "days" : "day"; },
+      check1:"Insurance included", check2:"250 km/day included", check3:"Open 7 days a week, 10am-6pm",
+      footer_desc:"Your trusted partner for car rental in Oujda.",
+      footer_links:"Quick links", footer_services:"Our services", footer_contact:"Contact us",
+      svc1:"Short-term rental", svc2:"Long-term rental", svc3:"Airport / hotel delivery", svc4:"7 days a week — 10am to 6pm",
+      wa_available:"WhatsApp available", copyright:"© 2026 Trinity Car — Car rental Oujda. All rights reserved.",
+      wa_default:"Hello Trinity Car, I would like to book a car.",
+      wa_agency_info:"Hello Trinity Car, I would like more information about the agency.",
+      wa_booking:function(car,start,end,days,total,name,phone,notes){
+        return "Hello Trinity Car, I would like to book:\n" +
+          "Vehicle: " + car.name + (car.annee ? " (" + car.annee + ")" : "") + "\n" +
+          "From: " + start + "  To: " + end + "  (" + days + " " + I18N[LANG].days_word(days) + ")\n" +
+          "Estimated price: " + total + " DH\n" + "Name: " + name + "\n" + "Phone: " + phone +
+          (notes ? "\nNotes: " + notes : "");
+      }
+    },
+    ar: {
+      dir:"rtl", htmlLang:"ar", title:"Trinity Car | كراء السيارات بوجدة",
+      desc:"Trinity Car - كراء السيارات بوجدة. سيارات حديثة، حجز سريع عبر واتساب، خدمة على مدار الساعة.",
+      tagline:"كراء السيارات بوجدة",
+      nav_home:"الرئيسية", nav_fleet:"أسطولنا", nav_agency:"من نحن", nav_reservation:"الحجز", nav_wa:"احجز عبر واتساب",
+      hero_eyebrow:"كراء السيارات بوجدة", hero_words:["رحلتك،", "في", "أمان", "تام."],
+      hero_lead:"سيارات حديثة، مصانة جيدا وجاهزة للطريق. بأفضل ثمن.", hero_wa_sub:"جواب سريع 24/7",
+      feat1_t:"أفضل ثمن", feat1_d:"مضمون", feat2_t:"جواب سريع", feat2_d:"24/7", feat3_t:"خدمة موثوقة", feat3_d:"زبناء راضون",
+      trust1_t:"تأمين شامل", trust1_d:"جميع سياراتنا مؤمنة لسلامتكم.",
+      trust2_t:"توصيل بالمطار / الفندق", trust2_d:"مجانا ابتداء من 5 أيام كراء.",
+      trust3_t:"مفتوحين 7 أيام على 7", trust3_d:"من 10 صباحا إلى 6 مساء، كل أيام الأسبوع.",
+      trust4_t:"زبناء راضون", trust4_d:function(){ return AGENCY.reviewsCount + " تقييم على گوگل — " + AGENCY.rating; },
+      fleet_heading:"أسطولنا", fleet_sub:"اختر السيارة التي تناسبك.", fleet_more:"شاهد كل الأسطول",
+      how_heading:"كيف تتم العملية؟",
+      step1_t:"اختر سيارتك", step1_d:"تصفح أسطولنا واختر السيارة التي تناسبك.",
+      step2_t:"حدد تواريخك", step2_d:"أدخل تاريخ البداية والنهاية حسب حاجتك.",
+      step3_t:"احجز عبر واتساب", step3_d:"أكد حجزك بسرعة عبر واتساب.",
+      promo_badge:"عرض خاص", promo_title:"كري 7 أيام، اليوم الأول فابور !",
+      promo_desc:"العرض صالح على جميع السيارات، ما عدا موسم الذروة. تواصلوا معنا عبر واتساب للاستفادة.",
+      fleet_page_eyebrow:"أسطولنا", fleet_page_h1:"جميع سياراتنا",
+      fleet_page_sub:"أسطول حديث ومصان جيدا، يناسب جميع تنقلاتكم داخل وجدة وضواحيها.",
+      fleet_categories:"الأصناف: اقتصادي · 4x4 · فخم",
+      filter_all_trans:"جميع أنواع الناقل", filter_auto:"أوتوماتيك", filter_manual:"يدوي",
+      sort_default:"الترتيب الافتراضي", sort_asc:"السعر تصاعديا", sort_desc:"السعر تنازليا",
+      ac_label:"تكييف", choose_btn:"اختيار", per_day:"/ اليوم", currency:"درهم",
+      agency_eyebrow:"من نحن", agency_h1:"وكالة Trinity Car",
+      agency_p1:"وكالة Trinity Car، ومقرها وجدة، تضع رهن إشارتكم أسطولا من السيارات الحديثة والمصانة جيدا — اقتصادية، 4x4 أو فخمة — لتنقلاتكم داخل المدينة أو نحو المدن المجاورة.",
+      agency_p2:"حجز بسيط عبر واتساب، تأمين شامل، توصيل بالمطار أو الفندق، وفريق متوفر 7 أيام على 7 من 10 صباحا إلى 6 مساء. الزبناء الأجانب مرحب بهم.",
+      info1_t:"المدن المشمولة", info1_d:"وجدة وضواحيها",
+      info2_t:"شروط الكراء", info2_d:"رخصة سياقة سارية، 25 سنة كحد أدنى، بطاقة تعريف",
+      info3_t:"أوقات العمل", info3_d:"مفتوح 7 أيام على 7، من 10 صباحا إلى 6 مساء", info4_t:"تواصل سريع",
+      info5_t:"الضمانة (الكاسيون)", info5_d:"10.000 درهم (تُرجع بعد نهاية الكراء)",
+      info6_t:"طريقة الأداء", info6_d:"بطاقة بنكية (TPE) أو نقدا",
+      info7_t:"الكيلومتراج", info7_d:"250 كلم مسموح لكل يوم",
+      info8_t:"توصيل بالمطار / الفندق", info8_d:"مجاني ابتداء من 5 أيام، وإلا برسوم إضافية (تواصلوا معنا)",
+      find_us_t:"موقعنا", find_us_phone_label:"الهاتف / واتساب:", contact_wa_btn:"تواصل عبر واتساب",
+      instagram_btn:"شاهد صورنا على Instagram",
+      res_eyebrow:"الحجز", res_h1:"احجز سيارتك",
+      res_sub:"املأ الاستمارة، وسيتم إرسال طلبك مباشرة عبر واتساب.",
+      field_vehicle:"السيارة", field_start:"تاريخ البداية", field_end:"تاريخ النهاية",
+      field_name:"الاسم الكامل", field_name_ph:"اسمك", field_phone:"رقم الهاتف", field_phone_ph:"06 00 00 00 00",
+      field_notes:"ملاحظات (اختياري)", field_notes_ph:"توصيل بالمطار، مقعد طفل، إلخ.",
+      submit_btn:"إرسال الطلب عبر واتساب",
+      fine_print:"بدون أي تفويض دفع مسبق. التأكيد مباشرة مع الوكالة.",
+      err_start:"يرجى اختيار تاريخ البداية.", err_end:"يرجى اختيار تاريخ النهاية.",
+      err_end_order:"يجب أن يكون تاريخ النهاية بعد تاريخ البداية.",
+      err_name:"يرجى إدخال اسمك.", err_phone:"يرجى إدخال رقم هاتفك.",
+      summary_title:"حجزك", summary_period:"المدة", summary_price_day:"السعر لليوم الواحد", summary_total:"المجموع",
+      days_word:function(n){ return n>1 ? "أيام" : "يوم"; },
+      check1:"تأمين شامل", check2:"250 كلم/اليوم مشمولة", check3:"مفتوح 7/7، من 10 صباحا إلى 6 مساء",
+      footer_desc:"شريككم الموثوق لكراء السيارات بوجدة.",
+      footer_links:"روابط سريعة", footer_services:"خدماتنا", footer_contact:"تواصل معنا",
+      svc1:"كراء لمدة قصيرة", svc2:"كراء لمدة طويلة", svc3:"توصيل بالمطار / الفندق", svc4:"7 أيام على 7 — من 10 صباحا إلى 6 مساء",
+      wa_available:"واتساب متوفر", copyright:"© 2026 Trinity Car — كراء السيارات بوجدة. جميع الحقوق محفوظة.",
+      wa_default:"مرحبا Trinity Car، أرغب في حجز سيارة.",
+      wa_agency_info:"مرحبا Trinity Car، أرغب في معلومات إضافية عن الوكالة.",
+      wa_booking:function(car,start,end,days,total,name,phone,notes){
+        return "مرحبا Trinity Car، أرغب في حجز:\n" +
+          "السيارة: " + car.name + (car.annee ? " (" + car.annee + ")" : "") + "\n" +
+          "من: " + start + "  إلى: " + end + "  (" + days + " " + I18N[LANG].days_word(days) + ")\n" +
+          "الثمن التقديري: " + total + " درهم\n" + "الاسم: " + name + "\n" + "الهاتف: " + phone +
+          (notes ? "\nملاحظات: " + notes : "");
+      }
+    }
+  };
+
+  var LANG = detectLang();
+  function detectLang(){
+    var saved = null;
+    try { saved = localStorage.getItem("trinity_lang"); } catch(e){}
+    if (saved && I18N[saved]) return saved;
+    var nav = (navigator.language || "fr").toLowerCase();
+    if (nav.indexOf("ar") === 0) return "ar";
+    if (nav.indexOf("en") === 0) return "en";
+    return "fr";
+  }
+  function t(key){ return I18N[LANG][key]; }
+  function esc(s){ var d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+  function waUrl(msg){ return "https://wa.me/" + AGENCY.whatsapp + "?text=" + encodeURIComponent(msg); }
+
+  var LANG_LABELS = { fr:"FR", en:"EN", ar:"AR" };
+  var LANG_CYCLE = { fr:"en", en:"ar", ar:"fr" };
+
+  function applyStaticTranslations(){
+    document.documentElement.lang = t("htmlLang");
+    document.documentElement.dir = t("dir");
+    document.getElementById("pageTitle").textContent = t("title");
+    document.getElementById("metaDesc").setAttribute("content", t("desc"));
+    document.getElementById("ogTitle").setAttribute("content", t("title"));
+    document.getElementById("ogDesc").setAttribute("content", t("desc"));
+
+    document.querySelectorAll("[data-i]").forEach(function(el){
+      var key = el.getAttribute("data-i");
+      if (I18N[LANG][key] !== undefined) el.textContent = t(key);
+    });
+
+    document.getElementById("langBtn").textContent = LANG_LABELS[LANG];
+    var msg = t("wa_default");
+    document.getElementById("navWaBtn").href = waUrl(msg);
+    document.getElementById("navWaBtnMobile").href = waUrl(msg);
+    document.getElementById("fabWa").href = waUrl(msg);
+    document.getElementById("fabWa").innerHTML = icon("whatsapp");
+    document.getElementById("navWaIcon").innerHTML = ICONS.whatsapp;
+
+    document.getElementById("footerServices").innerHTML =
+      "<li>" + t("svc1") + "</li><li>" + t("svc2") + "</li><li>" + t("svc3") + "</li><li>" + t("svc4") + "</li>";
+    document.getElementById("footerContact").innerHTML =
+      "<li>" + esc(AGENCY.address) + "</li><li>" + esc(AGENCY.phone) + "</li>" +
+      "<li>" + t("wa_available") + "</li><li>wa.me/" + AGENCY.whatsapp + "</li>" +
+      "<li><a href=\"" + AGENCY.instagram + "\" target=\"_blank\" rel=\"noreferrer\">Instagram @trinitycar1</a></li>";
+    document.getElementById("footerBottom").textContent = t("copyright");
+  }
+
+  document.getElementById("langBtn").addEventListener("click", function(){
+    LANG = LANG_CYCLE[LANG];
+    try { localStorage.setItem("trinity_lang", LANG); } catch(e){}
+    applyStaticTranslations();
+    router();
+  });
+
+  document.getElementById("burgerBtn").addEventListener("click", function(){
+    document.getElementById("mobileMenu").classList.toggle("open");
+  });
+
+  function setActiveNav(route){
+    document.querySelectorAll("[data-route]").forEach(function(a){
+      a.classList.toggle("active", a.getAttribute("data-route") === route);
+    });
+    document.getElementById("mobileMenu").classList.remove("open");
+  }
+
+  /* ---------------- REVEAL ON SCROLL ---------------- */
+  var revealObserver = null;
+  function initReveal(container){
+    if (revealObserver) revealObserver.disconnect();
+    revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add("in"); revealObserver.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    container.querySelectorAll(".reveal").forEach(function(el){ revealObserver.observe(el); });
+  }
+
+  /* ---------------- CAR CARD ---------------- */
+  function carSpecs(car){
+    var specs = [];
+    if (car.annee) specs.push(icon("calendar") + car.annee);
+    if (car.transmission) specs.push(icon("gear") + tv(car.transmission));
+    if (car.carburant) specs.push(icon("fuel") + tv(car.carburant));
+    specs.push(icon("snow") + t("ac_label"));
+    return specs;
+  }
+
+  function carCardHtml(car, index){
+    return (
+      '<div class="car-card reveal" style="transition-delay:' + (index*80) + 'ms">' +
+        '<div class="car-index">' + String(index+1).padStart(2,"0") + '</div>' +
+        '<div class="car-art">' + carPhotoHtml(car, car.name) + '</div>' +
+        '<h3>' + esc(car.name) + '</h3>' +
+        '<div class="car-specs">' + carSpecs(car).map(function(s){ return '<span>' + s + '</span>'; }).join("") + '</div>' +
+        '<div class="car-foot">' +
+          '<div class="car-price">' + car.price + ' ' + t("currency") + '<small> ' + t("per_day") + '</small></div>' +
+          '<button class="car-choose" data-choose-car="' + car.id + '">' + t("choose_btn") + '</button>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function bindCarChooseButtons(container){
+    container.querySelectorAll("[data-choose-car]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        sessionStorage.setItem("trinity_preset_car", btn.getAttribute("data-choose-car"));
+        location.hash = "#/reservation";
+      });
+    });
+  }
+
+  /* ---------------- PAGES ---------------- */
+  function pageHome(){
+    var wordsHtml = t("hero_words").map(function(w,i){
+      return '<span class="hero-word"><span style="animation-delay:' + (i*90) + 'ms">' + esc(w) + '</span></span>';
+    }).join(" ");
+
+    var trustItems = [
+      { ic:"shield", t:t("trust1_t"), d:t("trust1_d") },
+      { ic:"plane", t:t("trust2_t"), d:t("trust2_d") },
+      { ic:"clock", t:t("trust3_t"), d:t("trust3_d") },
+      { ic:"star", t:t("trust4_t"), d:t("trust4_d")() }
+    ];
+
+    var steps = [
+      { n:1, t:t("step1_t"), d:t("step1_d") },
+      { n:2, t:t("step2_t"), d:t("step2_d") },
+      { n:3, t:t("step3_t"), d:t("step3_d") }
+    ];
+
+    return (
+      '<div class="page">' +
+        '<section class="hero"><div class="wrap hero-inner">' +
+          '<div>' +
+            '<div class="eyebrow"><span class="dash"></span> ' + t("hero_eyebrow") + '</div>' +
+            '<h1>' + wordsHtml + '</h1>' +
+            '<p class="lead">' + t("hero_lead") + '</p>' +
+            '<a class="btn-wa" href="' + waUrl(t("wa_default")) + '" target="_blank" rel="noreferrer" style="padding:16px 24px;">' +
+              icon("whatsapp") + '<span>' + t("nav_wa") + '<br><small style="font-weight:400;opacity:.85;">' + t("hero_wa_sub") + '</small></span>' +
+            '</a>' +
+            '<div class="hero-features">' +
+              '<div><b>' + t("feat1_t") + '</b><span>' + t("feat1_d") + '</span></div>' +
+              '<div><b>' + t("feat2_t") + '</b><span>' + t("feat2_d") + '</span></div>' +
+              '<div><b>' + t("feat3_t") + '</b><span>' + t("feat3_d") + '</span></div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="hero-art reveal"><img src="sora5.jpeg" alt="Opel Corsa" loading="lazy"></div>' +
+        '</div></section>' +
+
+        '<div class="wrap"><div class="trust">' +
+          trustItems.map(function(it,i){
+            return '<div class="trust-item reveal" style="transition-delay:' + (i*80) + 'ms"><span class="ic">' + icon(it.ic) + '</span><b>' + it.t + '</b><span>' + it.d + '</span></div>';
+          }).join("") +
+        '</div></div>' +
+
+        '<section class="block" style="padding-bottom:0;"><div class="wrap">' +
+          '<div class="cta-panel reveal" style="background:var(--blue);">' +
+            '<div>' +
+              '<div class="eyebrow" style="color:rgba(255,255,255,.85);"><span class="dash" style="background:rgba(255,255,255,.6);"></span> ' + t("promo_badge") + '</div>' +
+              '<h3>' + icon("gift") + ' ' + t("promo_title") + '</h3>' +
+              '<p>' + t("promo_desc") + '</p>' +
+            '</div>' +
+            '<a class="btn-white" href="' + waUrl(t("wa_default")) + '" target="_blank" rel="noreferrer">' + icon("whatsapp") + ' ' + t("nav_wa") + '</a>' +
+          '</div>' +
+        '</div></section>' +
+
+        '<section class="block"><div class="wrap">' +
+          '<div class="section-head"><div><h2>' + t("fleet_heading") + '</h2><p>' + t("fleet_sub") + '</p></div>' +
+          '<a class="link-more" href="#/flotte" data-route="#/flotte">' + t("fleet_more") + '</a></div>' +
+          '<div class="grid-cars cols-4">' + CARS.slice(0,4).map(carCardHtml).join("") + '</div>' +
+        '</div></section>' +
+
+        '<section class="block" style="padding-top:0;"><div class="wrap">' +
+          '<div class="section-head" style="justify-content:center; text-align:center; display:block;">' +
+            '<div class="eyebrow" style="justify-content:center;"><span class="dash"></span> ' + t("how_heading") + ' <span class="dash"></span></div>' +
+          '</div>' +
+          '<div class="steps">' +
+            steps.map(function(s,i){
+              return '<div class="step-card reveal" style="transition-delay:' + (i*100) + 'ms"><div class="step-num">' + s.n + '</div><div><b>' + s.t + '</b><span>' + s.d + '</span></div></div>';
+            }).join("") +
+          '</div>' +
+        '</div></section>' +
+      '</div>'
+    );
+  }
+
+  var fleetState = { trans:"all", sort:"default" };
+  function filteredCars(){
+    var list = CARS.slice();
+    if (fleetState.trans !== "all") list = list.filter(function(c){ return c.transmission === fleetState.trans; });
+    if (fleetState.sort === "price-asc") list.sort(function(a,b){ return a.price - b.price; });
+    if (fleetState.sort === "price-desc") list.sort(function(a,b){ return b.price - a.price; });
+    return list;
+  }
+
+  function pageFleet(){
+    return (
+      '<div class="page"><div class="wrap" style="padding-top:44px; padding-bottom:56px;">' +
+        '<div class="reveal" style="margin-bottom:34px;">' +
+          '<div class="eyebrow"><span class="dash"></span> ' + t("fleet_page_eyebrow") + '</div>' +
+          '<h1 style="font-weight:800; font-size:2rem; margin:0 0 10px;">' + t("fleet_page_h1") + '</h1>' +
+          '<p style="color:rgba(16,20,24,.5); max-width:520px; margin:0 0 6px;">' + t("fleet_page_sub") + '</p>' +
+          '<p style="color:var(--blue); font-weight:600; font-size:.9rem; margin:0;">' + t("fleet_categories") + '</p>' +
+        '</div>' +
+        '<div class="filters">' +
+          '<select class="filter" id="filterTrans">' +
+            '<option value="all">' + t("filter_all_trans") + '</option>' +
+            '<option value="Automatique">' + t("filter_auto") + '</option>' +
+            '<option value="Manuelle">' + t("filter_manual") + '</option>' +
+          '</select>' +
+          '<select class="filter" id="filterSort">' +
+            '<option value="default">' + t("sort_default") + '</option>' +
+            '<option value="price-asc">' + t("sort_asc") + '</option>' +
+            '<option value="price-desc">' + t("sort_desc") + '</option>' +
+          '</select>' +
+        '</div>' +
+        '<div class="grid-cars cols-4" id="fleetGrid">' + filteredCars().map(carCardHtml).join("") + '</div>' +
+        '<p style="text-align:center; margin-top:34px; color:rgba(16,20,24,.45); font-size:.87rem;">' +
+          '<a href="' + AGENCY.instagram + '" target="_blank" rel="noreferrer" style="color:var(--blue); font-weight:600;">' + icon("instagram") + ' ' + t("instagram_btn") + '</a>' +
+        '</p>' +
+      '</div></div>'
+    );
+  }
+
+  function bindFleetPage(container){
+    var sel1 = container.querySelector("#filterTrans");
+    var sel2 = container.querySelector("#filterSort");
+    sel1.value = fleetState.trans; sel2.value = fleetState.sort;
+    function rerender(){
+      fleetState.trans = sel1.value; fleetState.sort = sel2.value;
+      var grid = container.querySelector("#fleetGrid");
+      grid.innerHTML = filteredCars().map(carCardHtml).join("");
+      bindCarChooseButtons(grid);
+      initReveal(grid);
+    }
+    sel1.addEventListener("change", rerender);
+    sel2.addEventListener("change", rerender);
+  }
+
+  function pageAgency(){
+    var infos = [
+      { ic:"pin", t:t("info1_t"), d:t("info1_d") },
+      { ic:"shield", t:t("info2_t"), d:t("info2_d") },
+      { ic:"clock", t:t("info3_t"), d:t("info3_d") },
+      { ic:"phone", t:t("info4_t"), d:AGENCY.phone },
+      { ic:"money", t:t("info5_t"), d:t("info5_d") },
+      { ic:"card", t:t("info6_t"), d:t("info6_d") },
+      { ic:"speed", t:t("info7_t"), d:t("info7_d") },
+      { ic:"plane", t:t("info8_t"), d:t("info8_d") }
+    ];
+    var mapQuery = encodeURIComponent(AGENCY.address);
+    return (
+      '<div class="page">' +
+        '<section class="block" style="padding-top:44px;"><div class="wrap hero-inner" style="padding:0;">' +
+          '<div class="reveal">' +
+            '<div class="eyebrow"><span class="dash"></span> ' + t("agency_eyebrow") + '</div>' +
+            '<h1 style="font-weight:800; font-size:2rem; margin:0 0 18px;">' + t("agency_h1") + '</h1>' +
+            '<p style="color:rgba(16,20,24,.6); line-height:1.7; margin:0 0 14px; max-width:480px;">' + t("agency_p1") + '</p>' +
+            '<p style="color:rgba(16,20,24,.6); line-height:1.7; margin:0 0 18px; max-width:480px;">' + t("agency_p2") + '</p>' +
+            '<a href="' + AGENCY.instagram + '" target="_blank" rel="noreferrer" style="display:inline-flex; align-items:center; gap:8px; color:var(--blue); font-weight:600;">' + icon("instagram") + ' ' + t("instagram_btn") + '</a>' +
+          '</div>' +
+          '<div class="hero-art reveal" style="transition-delay:100ms;"><img src="sora4.jpeg" alt="Trinity Car" loading="lazy"></div>' +
+        '</div></section>' +
+
+        '<section class="block" style="padding-top:0;"><div class="wrap agency-grid">' +
+          infos.map(function(it,i){
+            return '<div class="info-card reveal" style="transition-delay:' + (i*60) + 'ms"><span class="ic">' + icon(it.ic) + '</span><b>' + it.t + '</b><span>' + it.d + '</span></div>';
+          }).join("") +
+        '</div></section>' +
+
+        '<section class="block" style="padding-top:0;"><div class="wrap">' +
+          '<div class="cta-panel reveal">' +
+            '<div><h3>' + t("find_us_t") + '</h3><p>' + esc(AGENCY.address) + '</p><p>' + t("find_us_phone_label") + ' ' + AGENCY.phone + '</p></div>' +
+            '<a class="btn-white" href="' + waUrl(t("wa_agency_info")) + '" target="_blank" rel="noreferrer">' + icon("whatsapp") + ' ' + t("contact_wa_btn") + '</a>' +
+          '</div>' +
+          '<div class="reveal" style="margin-top:20px; border-radius:18px; overflow:hidden; border:1px solid var(--line);">' +
+            '<iframe src="https://www.google.com/maps?q=' + mapQuery + '&output=embed" width="100%" height="320" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' +
+          '</div>' +
+        '</div></section>' +
+      '</div>'
+    );
+  }
+
+  function pageReservation(){
+    var presetId = sessionStorage.getItem("trinity_preset_car");
+    var initialCar = presetId ? Number(presetId) : CARS[0].id;
+
+    return (
+      '<div class="page"><div class="wrap" style="padding-top:44px; padding-bottom:60px;">' +
+        '<div class="reveal" style="margin-bottom:10px;">' +
+          '<div class="eyebrow"><span class="dash"></span> ' + t("res_eyebrow") + '</div>' +
+          '<h1 style="font-weight:800; font-size:2rem; margin:0 0 8px;">' + t("res_h1") + '</h1>' +
+          '<p style="color:rgba(16,20,24,.5); margin:0;">' + t("res_sub") + '</p>' +
+        '</div>' +
+        '<div class="res-grid" style="margin-top:34px;">' +
+          '<form class="card-panel" id="resForm">' +
+            '<div class="field"><label>' + t("field_vehicle") + '</label><select id="fCar">' +
+              CARS.map(function(c){ return '<option value="' + c.id + '"' + (c.id===initialCar?' selected':'') + '>' + c.name + (c.annee ? ' (' + c.annee + ')' : '') + ' — ' + c.price + ' ' + t("currency") + t("per_day") + '</option>'; }).join("") +
+            '</select></div>' +
+            '<div class="field-row">' +
+              '<div class="field"><label>' + t("field_start") + '</label><input type="date" id="fStart"><div class="err" id="errStart"></div></div>' +
+              '<div class="field"><label>' + t("field_end") + '</label><input type="date" id="fEnd"><div class="err" id="errEnd"></div></div>' +
+            '</div>' +
+            '<div class="field-row">' +
+              '<div class="field"><label>' + t("field_name") + '</label><input type="text" id="fName" placeholder="' + t("field_name_ph") + '"><div class="err" id="errName"></div></div>' +
+              '<div class="field"><label>' + t("field_phone") + '</label><input type="text" id="fPhone" placeholder="' + t("field_phone_ph") + '"><div class="err" id="errPhone"></div></div>' +
+            '</div>' +
+            '<div class="field"><label>' + t("field_notes") + '</label><textarea id="fNotes" rows="3" placeholder="' + t("field_notes_ph") + '"></textarea></div>' +
+            '<button type="submit" class="submit-btn">' + icon("whatsapp") + ' ' + t("submit_btn") + '</button>' +
+            '<p class="fine">' + t("fine_print") + '</p>' +
+          '</form>' +
+          '<div class="card-panel reveal" id="resSummary" style="align-self:start;"></div>' +
+        '</div>' +
+      '</div></div>'
+    );
+  }
+
+  function renderSummary(){
+    var container = document.getElementById("resSummary");
+    if (!container) return;
+    var car = CARS.find(function(c){ return c.id === Number(document.getElementById("fCar").value); });
+    var start = document.getElementById("fStart").value;
+    var end = document.getElementById("fEnd").value;
+    var days = 0;
+    if (start && end){
+      var d = (new Date(end) - new Date(start)) / (1000*60*60*24);
+      days = d > 0 ? Math.round(d) : 0;
+    }
+    var total = days * (car ? car.price : 0);
+    container.innerHTML =
+      '<h3 style="margin:0 0 16px; font-family:Poppins; font-weight:600;">' + t("summary_title") + '</h3>' +
+      '<div class="summary-car"><div class="thumb">' + carPhotoHtml(car) + '</div><div><div style="font-weight:500;">' + car.name + '</div><div style="color:rgba(16,20,24,.4); font-size:.85rem;">' + (car.annee ? car.annee : "") + '</div></div></div>' +
+      '<dl class="summary-list">' +
+        '<div class="summary-row"><span>' + t("summary_period") + '</span><span>' + (days>0 ? (days + " " + t("days_word")(days)) : "—") + '</span></div>' +
+        '<div class="summary-row"><span>' + t("summary_price_day") + '</span><span>' + car.price + ' ' + t("currency") + '</span></div>' +
+      '</dl>' +
+      '<div class="summary-total"><span style="font-weight:600;">' + t("summary_total") + '</span><b>' + total + ' ' + t("currency") + '</b></div>' +
+      '<ul class="summary-list-checks">' +
+        '<li>' + icon("check") + t("check1") + '</li>' +
+        '<li>' + icon("check") + t("check2") + '</li>' +
+        '<li>' + icon("check") + t("check3") + '</li>' +
+      '</ul>';
+  }
+
+  function bindReservationPage(container){
+    ["fCar","fStart","fEnd"].forEach(function(id){
+      container.querySelector("#" + id).addEventListener("change", renderSummary);
+    });
+    renderSummary();
+
+    container.querySelector("#resForm").addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var car = CARS.find(function(c){ return c.id === Number(document.getElementById("fCar").value); });
+      var start = document.getElementById("fStart").value;
+      var end = document.getElementById("fEnd").value;
+      var name = document.getElementById("fName").value.trim();
+      var phone = document.getElementById("fPhone").value.trim();
+      var notes = document.getElementById("fNotes").value.trim();
+
+      ["errStart","errEnd","errName","errPhone"].forEach(function(id){ document.getElementById(id).textContent = ""; });
+      var valid = true;
+      var days = 0;
+      if (start && end){
+        var d = (new Date(end) - new Date(start)) / (1000*60*60*24);
+        days = d > 0 ? Math.round(d) : 0;
+      }
+      if (!start){ document.getElementById("errStart").textContent = t("err_start"); valid = false; }
+      if (!end){ document.getElementById("errEnd").textContent = t("err_end"); valid = false; }
+      if (start && end && days <= 0){ document.getElementById("errEnd").textContent = t("err_end_order"); valid = false; }
+      if (!name){ document.getElementById("errName").textContent = t("err_name"); valid = false; }
+      if (!phone){ document.getElementById("errPhone").textContent = t("err_phone"); valid = false; }
+      if (!valid) return;
+
+      var total = days * car.price;
+      var msg = t("wa_booking")(car, start, end, days, total, name, phone, notes);
+      window.location.href = waUrl(msg);
+    });
+  }
+
+  /* ---------------- ROUTER ---------------- */
+  function router(){
+    var hash = location.hash || "#/";
+    var app = document.getElementById("app");
+    var route = "#/";
+
+    if (hash.indexOf("#/flotte") === 0){ route = "#/flotte"; app.innerHTML = pageFleet(); bindFleetPage(app); }
+    else if (hash.indexOf("#/agence") === 0){ route = "#/agence"; app.innerHTML = pageAgency(); }
+    else if (hash.indexOf("#/reservation") === 0){ route = "#/reservation"; app.innerHTML = pageReservation(); bindReservationPage(app); }
+    else { route = "#/"; app.innerHTML = pageHome(); }
+
+    bindCarChooseButtons(app);
+    setActiveNav(route);
+    initReveal(app);
+    window.scrollTo(0,0);
+  }
+
+  window.addEventListener("hashchange", router);
+  document.addEventListener("DOMContentLoaded", function(){
+    applyStaticTranslations();
+    router();
+  });
+})();
+</script>
+</body>
+</html>
